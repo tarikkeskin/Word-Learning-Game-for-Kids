@@ -1,5 +1,17 @@
 <resources>
     <string name="app_name">KidsGame</string>
     <string name="text_main_activity">Lets Play and Learn Words</string>
+    <string name="exercises">Exercises</string>
+    <string name="learn_color">Learn Color</string>
+    <string name="learn_animals">Learn Animals</string>
+    <string name="image2">image2</string>
+    <string name="image3">image3</string>
+
+    <string name="animal_dog">Dog</string>
+    <string name="animal_monkey">Monkey</string>
+    <string name="animal_horse">Horse</string>
+    <string name="animal_elephant">Elephant</string>
+
+
 
 </resources>
