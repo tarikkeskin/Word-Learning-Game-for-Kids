@@ -13,13 +13,14 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="30dp"
+        android:background="#9ED7F1"
+        android:divider="@drawable/empty_tall2"
         android:orientation="vertical"
+        android:showDividers="middle|beginning|end"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:showDividers="middle|beginning|end"
-        android:divider="@drawable/empty_tall2">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -13,13 +13,24 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="30dp"
+        android:background="#F8D5F8CD"
+        android:divider="@drawable/empty_tall2"
         android:orientation="vertical"
+        android:showDividers="middle|beginning|end"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:showDividers="middle|beginning|end"
-        android:divider="@drawable/empty_tall2">
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/scoretext"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:scrollbarSize="6dp"
+            android:text="TextView"
+            android:textColor="#FF6E40"
+            android:textSize="33dp"
+            android:textStyle="bold|italic" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,18 +47,18 @@
 
         <EditText
             android:id="@+id/editexercises"
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:hint="Type Answer"
+            android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true">
-        </EditText>
+            android:layout_centerVertical="true"
+            android:hint="Type Answer"></EditText>
 
         <Button
             android:id="@+id/buttonexercises"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Button" />
+
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
