@@ -37,7 +37,10 @@
             android:id="@+id/textanimal"
             android:layout_width="match_parent"
             android:layout_height="82dp"
-            android:text="TextView" />
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="39dp"
+            android:textStyle="bold|italic" />
 
         <Button
             android:id="@+id/button"

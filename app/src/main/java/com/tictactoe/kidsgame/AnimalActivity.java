@@ -24,20 +24,42 @@ public class AnimalActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_animal);
 
         setContentView(R.layout.activity_animal);
 
         final ImageView img = (ImageView) findViewById(R.id.image_animal);
         // I have 3 images named img_0 to img_2, so...
-        final String str = "imganimal_" + rnd.nextInt(2);
+        int random = rnd.nextInt(4);
+        final String str = "imganimal_" + random;
         img.setImageDrawable
                 (getResources().getDrawable(getResourceID(str, "drawable", getApplicationContext())));
 
-        // globally
         TextView myAwesomeTextView = (TextView) findViewById(R.id.textanimal);
-        //in your OnCreate() method
-        myAwesomeTextView.setText("My Awesome Text");
+
+        switch(random) {
+            case 0:
+                myAwesomeTextView.setText("Dog");
+                break;
+            case 1:
+                myAwesomeTextView.setText("Monkey");
+                break;
+            case 2:
+                myAwesomeTextView.setText("Horse");
+                break;
+            case 3:
+                myAwesomeTextView.setText("Elephant");
+                break;
+            case 4:
+                myAwesomeTextView.setText("Cat");
+                break;
+            case 5:
+                myAwesomeTextView.setText("Bird");
+                break;
+            case 6:
+                myAwesomeTextView.setText("Turtle");
+                break;
+        }
+
 
     }
 
@@ -60,9 +82,7 @@ public class AnimalActivity extends AppCompatActivity {
         }
     }
     public void goNextPicture(View view){
-
-        Intent intent = new Intent(this,AnimalActivity.class);
-
-        startActivity(intent);
+        finish();
+        startActivity(getIntent());
     }
 }
